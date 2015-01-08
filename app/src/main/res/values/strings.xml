@@ -2,7 +2,30 @@
 <resources>
 
     <string name="app_name">ContactMe</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="temp_name1">Proceso de registro</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_registro">Nuevo registro</string>
+    <string name="title_activity_activity_login">Inicio de sesión</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="temp_name2">Activity de inicio de sesión</string>
+    <string name="btn_login">IniciaMe!</string>
+    <string name="title_activity_activity_choose">Seleccionar categoría</string>
+    <string name="temp_name3">Filtrar por categoría</string>
+    <string name="button_choose">BuscaMe!</string>
+    <string name="title_activity_activity_map">Mapa de zonas</string>
+    <string name="temp_name4">Mapa de ubicación de zonas</string>
+    <string name="button_map">ContactaMe!</string>
+    <string name="title_activity_activity_profile">Perfil de contacto</string>
+    <string name="temp_name5">Activity Perfil del contacto</string>
+    <string name="button_profile">ContactMe!</string>
+    <string name="title_activity_activity_contact">Datos de contacto</string>
+    <string name="temp_name6">Activity Datos de contacto</string>
+    <string name="button_contact">ConfirmaMe!</string>
+    <string name="title_activity_activity_rating">Calificación</string>
+    <string name="tem_name7">Activity Para calificar al contacto</string>
+    <string name="button_rating">CalificaMe!</string>
+    <string name="title_activity_activity_servicio">En contacto</string>
+    <string name="temp_name8">Activity Servicio</string>
+    <string name="button_service">FinalizaMe!</string>
 
 </resources>

@@ -16,6 +16,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.Activity_register"
+            android:label="@string/title_activity_activity_registro" >
+        </activity>
+        <activity
+            android:name=".view.Activity_login"
+            android:label="@string/title_activity_activity_login" >
+        </activity>
+        <activity
+            android:name=".view.Activity_choose"
+            android:label="@string/title_activity_activity_choose" >
+        </activity>
+        <activity
+            android:name=".view.Activity_map"
+            android:label="@string/title_activity_activity_map" >
+        </activity>
+        <activity
+            android:name=".view.Activity_profile"
+            android:label="@string/title_activity_activity_profile" >
+        </activity>
+        <activity
+            android:name=".view.Activity_contact"
+            android:label="@string/title_activity_activity_contact" >
+        </activity>
+        <activity
+            android:name=".view.Activity_rating"
+            android:label="@string/title_activity_activity_rating" >
+        </activity>
+        <activity
+            android:name=".view.Activity_service"
+            android:label="@string/title_activity_activity_servicio" >
+        </activity>
     </application>
 
 </manifest>
