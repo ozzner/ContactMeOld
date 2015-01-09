@@ -18,6 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_profile"
+        android:onClick="profile_click"
         android:id="@+id/btn_profile"
         android:layout_marginBottom="89dp"
         android:layout_alignParentBottom="true"

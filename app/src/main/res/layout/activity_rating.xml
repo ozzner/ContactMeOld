@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_rating"
         android:id="@+id/btn_rating"
+        android:onClick="rating_click"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="76dp"
         android:layout_alignLeft="@+id/tv_rating"

@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:text="RegistrarMe!"
         android:id="@+id/btn_registro"
+        android:onClick="register_click"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"

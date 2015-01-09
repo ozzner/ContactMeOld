@@ -1,19 +1,32 @@
 package pe.nullpoint.contactme.view;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import pe.nullpoint.contactme.R;
 
 public class Activity_map extends ActionBarActivity {
 
+    private Button btnMap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        btnMap = (Button)findViewById(R.id.btn_map);
     }
+
+
+    public void map_click(View v){
+        Intent i = new Intent(getApplication(), Activity_profile.class);
+        startActivity(i);
+        finish();
+    }
+
 
 
     @Override

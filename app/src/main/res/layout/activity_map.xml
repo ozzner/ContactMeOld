@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_map"
         android:id="@+id/btn_map"
+        android:onClick="map_click"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="74dp"
         android:layout_alignRight="@+id/tv_map"

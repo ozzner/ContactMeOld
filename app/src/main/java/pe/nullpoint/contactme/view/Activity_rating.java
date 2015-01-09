@@ -1,20 +1,30 @@
 package pe.nullpoint.contactme.view;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import pe.nullpoint.contactme.R;
 
 public class Activity_rating extends ActionBarActivity {
 
+    private Button btnRating;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rating);
+        btnRating = (Button)findViewById(R.id.btn_rating);
     }
 
+    public void rating_click(View v){
+        Intent i = new Intent(getApplication(), Activity_map.class);
+        startActivity(i);
+        finish();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

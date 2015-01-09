@@ -1,17 +1,27 @@
 package pe.nullpoint.contactme;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+import pe.nullpoint.contactme.view.Activity_choose;
+import pe.nullpoint.contactme.view.Activity_register;
 
 
 public class ContactMe extends ActionBarActivity {
+
+    private Button btnIniciar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_me);
+        btnIniciar = (Button)findViewById(R.id.btn_splash);
     }
 
 
@@ -21,6 +31,18 @@ public class ContactMe extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_contact_me, menu);
         return true;
     }
+
+
+
+    public void iniciar_click(View v){
+//        Toast.makeText(getApplicationContext(),"Click",Toast.LENGTH_LONG).show();
+
+        Intent i = new Intent(getApplication(), Activity_register.class);
+        startActivity(i);
+        finish();
+
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

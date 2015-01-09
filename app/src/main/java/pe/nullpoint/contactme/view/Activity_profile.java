@@ -1,19 +1,33 @@
 package pe.nullpoint.contactme.view;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import pe.nullpoint.contactme.R;
 
 public class Activity_profile extends ActionBarActivity {
 
+    private Button btnProfile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        btnProfile = (Button)findViewById(R.id.btn_profile);
     }
+
+
+    public void profile_click(View v){
+        Intent i = new Intent(getApplication(), Activity_contact.class);
+        startActivity(i);
+        finish();
+    }
+
+
 
 
     @Override
