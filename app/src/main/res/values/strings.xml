@@ -8,7 +8,7 @@
     <string name="title_activity_activity_login">Inicio de sesión</string>
     <string name="hello_world">Hello world!</string>
     <string name="temp_name2">Activity de inicio de sesión</string>
-    <string name="btn_login">IniciaMe!</string>
+    <string name="btn_login">StartMe!</string>
     <string name="title_activity_activity_choose">Seleccionar categoría</string>
     <string name="temp_name3">Filtrar por categoría</string>
     <string name="button_choose">BuscaMe!</string>

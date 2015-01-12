@@ -1,31 +1,75 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="pe.nullpoint.contactme.view.Activity_login">
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+ >
 
-    <TextView
-        android:text="@string/temp_name2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/tv_inicio_sesion"
-        android:textSize="25sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pad_20dp"
+        android:paddingLeft="@dimen/pad_15dp"
+        android:paddingRight="@dimen/pad_15dp"
+        android:paddingTop="@dimen/pad_20dp" >
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_login"
-        android:onClick="login_click"
-        android:id="@+id/btn_login"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="95dp"
-        android:layout_alignRight="@+id/tv_inicio_sesion"
-        android:layout_alignEnd="@+id/tv_inicio_sesion"
-        android:layout_alignLeft="@+id/tv_inicio_sesion"
-        android:layout_alignStart="@+id/tv_inicio_sesion" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contactme"
+            android:layout_marginBottom="@dimen/pad_20dp" />
 
-</RelativeLayout>
+        <EditText
+            android:id="@+id/user"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_username"
+            android:hint="Usuario" >
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/pwd"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pad_20dp"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:hint="Contraseña"
+            android:inputType="textPassword" >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!--<Button-->
+                <!--android:id="@+id/btnLogin"-->
+                <!--style="@style/btn_white_large"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Login" />-->
+
+            <Button
+                android:layout_width="293dp"
+                android:layout_height="49dp"
+                android:text="@string/btn_login"
+                android:onClick="login_click"
+                android:id="@+id/btn_login"
+                style="@style/btn_white_large"
+                android:background="@drawable/button_standar"
+             />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
