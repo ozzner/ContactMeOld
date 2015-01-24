@@ -17,7 +17,7 @@ public class Activity_register extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        btnRegister = (Button)findViewById(R.id.btn_registro);
+        btnRegister = (Button)findViewById(R.id.btn_register);
     }
 
 

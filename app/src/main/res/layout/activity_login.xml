@@ -27,7 +27,7 @@
             style="@style/editext_graybg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_username"
+            android:drawableLeft="@drawable/ic_action_accounts"
             android:hint="Usuario" >
             <requestFocus />
         </EditText>
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/pad_20dp"
             android:layout_marginTop="@dimen/pad_5dp"
-            android:drawableLeft="@drawable/ic_pwd"
+            android:drawableLeft="@drawable/ic_action_secure"
             android:hint="Contraseña"
             android:inputType="textPassword" >
         </EditText>
@@ -60,7 +60,7 @@
 
             <Button
                 android:layout_width="293dp"
-                android:layout_height="49dp"
+                android:layout_height="44dp"
                 android:text="@string/btn_login"
                 android:onClick="login_click"
                 android:id="@+id/btn_login"

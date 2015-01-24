@@ -2,6 +2,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="pe.nullpoint.contactme.view.Activity_register">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_login_google"
+        android:title="@string/action_login_google"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_google_plus_5"
+        app:showAsAction="always|withText" />
+
+    <item android:id="@+id/action_login_info"
+        android:title="@string/action_login_info"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_about"
+        app:showAsAction="collapseActionView|ifRoom"/>
 </menu>

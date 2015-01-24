@@ -15,7 +15,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_splash"
         android:id="@+id/btn_splash"
         android:onClick="iniciar_click"
         android:layout_alignParentBottom="true"

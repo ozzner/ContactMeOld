@@ -17,7 +17,7 @@ public class Activity_profile extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        btnProfile = (Button)findViewById(R.id.btn_profile);
+//        btnProfile = (Button)findViewById(R.id.btn_profile);
     }
 
 
