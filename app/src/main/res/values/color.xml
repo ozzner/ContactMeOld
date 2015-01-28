@@ -5,10 +5,19 @@
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="main_secondary_color">#800080</color>
+    <color name="main_optional_color">#7F004A</color>
     <color name="main_color">#B000FF</color>
     <color name="main_accent">#E9BD15</color>
+    <color name="main_accent_2">#FFCC33</color>
     <color name="transparent">#00000000</color>
-    
+    <color name="gray_custom">#dddddd</color>
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
     <color name="main_color_green">#00b863</color>
     <color name="main_color_gray_dk">#3b3b3b</color>
     <color name="main_color_gray_lt">#acacac</color>

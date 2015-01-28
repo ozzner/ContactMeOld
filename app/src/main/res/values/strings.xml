@@ -31,5 +31,6 @@
     <string name="button_service">FinalizaMe!</string>
     <string name="temp_name9">¡¡¡¡Activity Splash!!!!</string>
     <string name="button_register">RegisterMe!</string>
+    <string name="title_activity_activity_history">Activity_history</string>
 
 </resources>
