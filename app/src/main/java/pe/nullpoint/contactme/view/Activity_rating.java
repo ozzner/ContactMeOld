@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import pe.nullpoint.contactme.R;
 
@@ -21,9 +22,14 @@ public class Activity_rating extends ActionBarActivity {
     }
 
     public void rating_click(View v){
-        Intent i = new Intent(getApplication(), Activity_map.class);
-        startActivity(i);
-        finish();
+        showMyToast("Open map");
+//        Intent i = new Intent(getApplication(), Activity_map.class);
+//        startActivity(i);
+//        finish();
+    }
+
+    public void showMyToast(String message){
+        Toast.makeText(getApplicationContext(),message,Toast.LENGTH_SHORT).show();
     }
 
     @Override

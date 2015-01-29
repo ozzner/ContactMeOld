@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import pe.nullpoint.contactme.R;
 
@@ -21,9 +22,10 @@ public class Activity_service extends ActionBarActivity {
     }
 
     public void service_click(View v){
-        Intent i = new Intent(getApplication(), Activity_rating.class);
-        startActivity(i);
-        finish();
+//        Intent i = new Intent(getApplication(), Activity_rating.class);
+//        startActivity(i);
+        Toast.makeText(getApplicationContext(),"click",Toast.LENGTH_SHORT).show();
+//        finish();
     }
 
 

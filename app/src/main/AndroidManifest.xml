@@ -70,19 +70,22 @@
         </activity>
         <activity
             android:name=".view.Activity_rating"
-            android:label="@string/title_activity_activity_rating" >
-        </activity>
-        <activity
-            android:name=".view.Activity_service"
-            android:label="@string/title_activity_activity_servicio" >
-        </activity>
-        <activity
-            android:name=".view.Activity_history"
-            android:label="@string/title_activity_activity_history" >
+            android:label="@string/title_activity_activity_rating"
+           >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.Activity_service"
+            android:label="@string/title_activity_activity_servicio" >
+
+        </activity>
+        <activity
+            android:name=".view.Activity_history"
+            android:label="@string/title_activity_activity_history" >
+
         </activity>
     </application>
 

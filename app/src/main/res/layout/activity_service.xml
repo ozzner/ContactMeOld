@@ -1,29 +1,326 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
     tools:context="pe.nullpoint.contactme.view.Activity_service">
 
-    <TextView android:text="@string/temp_name8" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/tv_service"
-        android:textSize="25sp" />
 
-    <Button
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="410dp"
+    android:layout_weight="1">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/layout_bordes"
+                android:id="@+id/lay_service_details">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/layout_bordes"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Orden de servicio"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                    android:textColor="@color/main_color_gray_lt"
+                        android:id="@+id/tv_service_details" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="2dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1">
+<LinearLayout
+    android:layout_width="80dp"
+    android:layout_height="wrap_content">
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_service"
-        android:id="@+id/btn_service"
-        android:onClick="service_click"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/tv_service"
-        android:layout_alignStart="@+id/tv_service"
-        android:layout_marginBottom="49dp"
-        android:layout_alignRight="@+id/tv_service"
-        android:layout_alignEnd="@+id/tv_service" />
+        android:text="Orden N°"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/main_accent"
+        android:id="@+id/tv_lbl_os"
+        />
+    </LinearLayout>
 
-</RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/main_accent"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/tv_lbl_points1_os" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textSize="14sp"
+                        android:textColor="@color/main_secondary_color"
+                        android:id="@+id/tv_os" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="2dp"
+                    android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/main_accent"                        android:layout_weight="0.13"
+                        android:id="@+id/tv_lbl_name_os"
+                        />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/main_accent"
+                        android:id="@+id/tv_lbl_points2_os" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/main_secondary_color"
+                        android:text="Desarrollo de página web"
+                        android:id="@+id/tv_name_os" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="2dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Fecha"
+                            android:textColor="@color/main_accent"
+                            android:id="@+id/tv_lbl_date_os"
+                            android:layout_marginRight="27dp" />
+                        </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/main_accent"
+                        android:id="@+id/tv_lbl_points3_os" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/main_secondary_color"
+                        android:text="18-may-2006 19:35:45"
+                        android:id="@+id/tv_date_os"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                   >
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Estado:"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:id="@+id/tv_lbl_status_os" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Activo"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:id="@+id/tv_status_os" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/iv_status_os"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_important_green" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:background="@drawable/layout_bordes"
+                android:id="@+id/lay_service_contact">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/layout_bordes"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contacto"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/main_color_gray_lt"
+                            android:id="@+id/tv_lbl_detalis_contact" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/contact1"
+                            app:border_width="0.5dp"
+                            android:layout_marginRight="10dp"
+                            app:border_color="@color/transparent"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:text="Renzo David Santillán Chavez"
+                                android:id="@+id/tv_contact_name_os" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Desarrollo"
+                                android:textSize="14sp"
+                                android:textColor="@color/main_secondary_color"
+                                android:id="@+id/tv_contact_category_os" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/main_color"
+                                android:text="Programador y diseñador android"
+                                android:id="@+id/tv_job_os" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp"
+                    android:layout_marginTop="18dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="993297151"
+                        style="@style/btn_white_large"
+                        android:background="@drawable/button_green"
+                        android:id="@+id/btn_callme"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:padding="3dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="@string/button_service"
+            android:id="@+id/btn_service"
+            android:onClick="service_click"
+            style="@style/btn_white_large"
+            android:background="@drawable/button_red"
+            />
+        </LinearLayout>
+
+
+</LinearLayout>
