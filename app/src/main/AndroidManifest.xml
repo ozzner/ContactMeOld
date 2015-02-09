@@ -38,18 +38,16 @@
             android:name=".view.Activity_register"
             android:label="@string/title_activity_activity_registro"
             android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".view.Activity_login"
             android:label="@string/title_activity_activity_login"
             android:windowSoftInputMode="stateHidden" >
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".view.Activity_choose"
@@ -62,7 +60,6 @@
         <activity
             android:name=".view.Activity_profile"
             android:label="@string/title_activity_activity_profile" >
-
         </activity>
         <activity
             android:name=".view.Activity_contact"
@@ -71,22 +68,22 @@
         <activity
             android:name=".view.Activity_rating"
             android:label="@string/title_activity_activity_rating"
-           >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
             android:name=".view.Activity_service"
             android:label="@string/title_activity_activity_servicio" >
-
         </activity>
         <activity
             android:name=".view.Activity_history"
             android:label="@string/title_activity_activity_history" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

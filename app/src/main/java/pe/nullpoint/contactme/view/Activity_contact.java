@@ -17,7 +17,7 @@ public class Activity_contact extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
-        btnContact = (Button)findViewById(R.id.btn_contact);
+//        btnContact = (Button)findViewById(R.id.btn_contact);
     }
 
     public void contact_click(View v){

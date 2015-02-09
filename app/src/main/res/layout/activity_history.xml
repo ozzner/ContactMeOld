@@ -9,11 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/lv_history"
-        android:dividerHeight="0.5dp"
-        android:divider="@color/list_divider"
-        android:listSelector="@drawable/list_row_selector"
-        android:minHeight="100dp"
+        android:divider="@color/main_accent_2"
+        android:dividerHeight="0.25dp"
         android:scrollbars="none"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:listSelector="@drawable/list_row_selector"
         />
+
 </RelativeLayout>

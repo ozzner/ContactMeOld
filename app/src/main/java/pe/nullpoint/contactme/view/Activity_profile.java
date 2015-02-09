@@ -22,7 +22,7 @@ public class Activity_profile extends ActionBarActivity {
 
 
     public void profile_click(View v){
-        Intent i = new Intent(getApplication(), Activity_contact.class);
+        Intent i = new Intent(getApplication(), Activity_history.class);
         startActivity(i);
         finish();
     }

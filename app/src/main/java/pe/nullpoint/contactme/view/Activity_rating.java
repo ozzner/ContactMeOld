@@ -22,10 +22,10 @@ public class Activity_rating extends ActionBarActivity {
     }
 
     public void rating_click(View v){
-        showMyToast("Open map");
-//        Intent i = new Intent(getApplication(), Activity_map.class);
-//        startActivity(i);
-//        finish();
+        showMyToast("Opening map...");
+        Intent i = new Intent(getApplication(), Activity_map.class);
+        startActivity(i);
+        finish();
     }
 
     public void showMyToast(String message){

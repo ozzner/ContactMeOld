@@ -22,8 +22,8 @@ public class Activity_service extends ActionBarActivity {
     }
 
     public void service_click(View v){
-//        Intent i = new Intent(getApplication(), Activity_rating.class);
-//        startActivity(i);
+        Intent i = new Intent(getApplication(), Activity_rating.class);
+        startActivity(i);
         Toast.makeText(getApplicationContext(),"click",Toast.LENGTH_SHORT).show();
 //        finish();
     }

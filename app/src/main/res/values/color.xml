@@ -12,8 +12,8 @@
     <color name="transparent">#00000000</color>
     <color name="zero_background">#7f040000</color>
     <color name="gray_custom">#dddddd</color>
-    <color name="genre">#666666</color>
-    <color name="year">#888888</color>
+
+    <!-- Buttons colors -->
     <color name="my_color_green">#02A902</color>
     <color name="my_color_green_hover">#058705</color>
     <color name="my_color_red">#ee2c2c</color>
@@ -21,12 +21,15 @@
     <color name="my_color_yellow">#FFA500</color>
     <color name="my_color_yellow_hover">#cd950c</color>
 
-
+    <!-- ListView colors -->
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
     <color name="list_divider">#d9d9d9</color>
     <color name="list_row_start_color">#ffffff</color>
     <color name="list_row_end_color">#ffffff</color>
     <color name="list_row_hover_start_color">#ebeef0</color>
     <color name="list_row_hover_end_color">#ebeef0</color>
+
 
     <color name="main_color_green">#00b863</color>
     <color name="main_color_gray_dk">#3b3b3b</color>
